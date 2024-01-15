@@ -26,4 +26,4 @@ Feel free to explore the code, experiment with modifications, and enhance the ga
 
 ## Acknowledgements
 - [Raylib](https://www.raylib.com/): A simple and easy-to-use C library for game development.
-- [Video Tutorial](https://www.youtube.com/@programmingwithnick) Programming with Nick
+- [Video Tutorial](https://www.youtube.com/@programmingwithnick): Programming with Nick
