@@ -139,6 +139,7 @@ public:
 			snake.Update();
 			CheckCollisionWithFood();
 			CheckCollisionWithEdges();
+			CheckCollisionWithTail();
 		}
 	}
 
@@ -159,6 +160,15 @@ public:
 		}
 	}
 
+	void CheckCollisionWithTail() {
+		deque<Vector2> headlessBody = snake.body;
+		headlessBody.pop_front();
+		if (isPresentInBody(snake.body[0], headlessBody)) {
+			GameOver();
+		}
+
+	}	
+		
 	void GameOver() {
 		snake.Reset();
 		food.position = food.GenerateRandomPos(snake.body);
