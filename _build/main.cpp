@@ -98,6 +98,14 @@ public:
 
     void Update() {
         snake.Update();
+        CheckCollisionWithFood();
+    }
+   
+    void CheckCollisionWithFood() {
+        if (Vector2Equals(snake.body[0] , food.position)) {
+            food.position = food.GenerateRandomPos();
+            snake.body.push_back(snake.body[snake.body.size() - 1]);
+        }
     }
 };
 
