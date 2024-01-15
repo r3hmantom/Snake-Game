@@ -214,7 +214,6 @@ int main() {
 
 		ClearBackground(green);
 		DrawRectangleLinesEx(Rectangle{ offset - 5, offset - 5,(float) cellSize * cellCount + 10,(float) cellSize * cellCount + 10 }, 5, darkGreen);
-		DrawText("Retro Snake", offset - 5, 20, 40, darkGreen);
 		EndDrawing();
 	}
 
